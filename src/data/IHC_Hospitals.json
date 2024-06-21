@@ -1,0 +1,722 @@
+[
+  {
+    "Index": 1,
+    "Hospital": "Bali International Hospital",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -8.676162313,
+    "Longitude": 115.2661426,
+    "Type": "PBM AP",
+    "Beds": 300
+  },
+  {
+    "Index": 2,
+    "Hospital": "RS Pusat Pertamina",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.239838906,
+    "Longitude": 106.7933298,
+    "Type": "PBM",
+    "Beds": 302
+  },
+  {
+    "Index": 3,
+    "Hospital": "RS Pertamina Jaya",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.173048361,
+    "Longitude": 106.8761722,
+    "Type": "PBM",
+    "Beds": 155
+  },
+  {
+    "Index": 4,
+    "Hospital": "RS Pertamina Balikpapan",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -1.279116324,
+    "Longitude": 116.8173345,
+    "Type": "PBM",
+    "Beds": 180
+  },
+  {
+    "Index": 5,
+    "Hospital": "RS Pertamina Cirebon",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.68376661,
+    "Longitude": 108.5521196,
+    "Type": "PBM",
+    "Beds": 100
+  },
+  {
+    "Index": 6,
+    "Hospital": "RS Pertamina Pangkalan Brandan",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": 4.022031762,
+    "Longitude": 98.28354949,
+    "Type": "PBM",
+    "Beds": 123
+  },
+  {
+    "Index": 7,
+    "Hospital": "RS Pertamina Plaju",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -2.994300127,
+    "Longitude": 104.8247073,
+    "Type": "PBM",
+    "Beds": 79
+  },
+  {
+    "Index": 8,
+    "Hospital": "RS Pertamina Prabumulih",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -3.435072653,
+    "Longitude": 104.2261517,
+    "Type": "PBM",
+    "Beds": 72
+  },
+  {
+    "Index": 9,
+    "Hospital": "RS Pertamina Tarakan",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": 3.322598337,
+    "Longitude": 117.5748275,
+    "Type": "PBM",
+    "Beds": 55
+  },
+  {
+    "Index": 10,
+    "Hospital": "RS Pertamina Tanjung",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -1.541806747,
+    "Longitude": 115.3993381,
+    "Type": "PBM",
+    "Beds": 51
+  },
+  {
+    "Index": 11,
+    "Hospital": "RS Pertamina Sorong",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -0.877979858,
+    "Longitude": 131.2601884,
+    "Type": "PBM",
+    "Beds": 23
+  },
+  {
+    "Index": 12,
+    "Hospital": "RS Pertamina Cilacap",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -7.701306528,
+    "Longitude": 109.0458212,
+    "Type": "PBM",
+    "Beds": 85
+  },
+  {
+    "Index": 13,
+    "Hospital": "RS Pertamina Balongan",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.346360021,
+    "Longitude": 108.3395112,
+    "Type": "PBM",
+    "Beds": 50
+  },
+  {
+    "Index": 14,
+    "Hospital": "RS Pertamina Dumai",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": 1.65159217,
+    "Longitude": 101.4260364,
+    "Type": "PBM",
+    "Beds": 50
+  },
+  {
+    "Index": 15,
+    "Hospital": "RS Pertamina Rantau",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": 4.353081945,
+    "Longitude": 98.12071161,
+    "Type": "PBM",
+    "Beds": 50
+  },
+  {
+    "Index": 16,
+    "Hospital": "RS Pelni",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.192387412,
+    "Longitude": 106.8035262,
+    "Type": "PBM AP",
+    "Beds": 524
+  },
+  {
+    "Index": 17,
+    "Hospital": "RS Krakatau Medika",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -5.967320515,
+    "Longitude": 106.0205146,
+    "Type": "PBM AP",
+    "Beds": 236
+  },
+  {
+    "Index": 18,
+    "Hospital": "RS Bakti Timah Pangkalpinang",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -2.114309804,
+    "Longitude": 106.1091562,
+    "Type": "PBM AP",
+    "Beds": 175
+  },
+  {
+    "Index": 19,
+    "Hospital": "RS Medika Stania Sungailiat",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -1.85795542,
+    "Longitude": 106.1177583,
+    "Type": "PBM AP",
+    "Beds": 109
+  },
+  {
+    "Index": 20,
+    "Hospital": "RS Bakti Timah Muntok",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -2.07103094,
+    "Longitude": 105.1848133,
+    "Type": "PBM AP",
+    "Beds": 24
+  },
+  {
+    "Index": 21,
+    "Hospital": "RS Bakti Timah Karimun",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": 1.042218621,
+    "Longitude": 103.4023764,
+    "Type": "PBM AP",
+    "Beds": 119
+  },
+  {
+    "Index": 22,
+    "Hospital": "RS Pelabuhan Jakarta",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.124646315,
+    "Longitude": 106.9177356,
+    "Type": "PBM AP",
+    "Beds": 169
+  },
+  {
+    "Index": 23,
+    "Hospital": "RS Pelabuhan Cirebon",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.713243898,
+    "Longitude": 108.5676738,
+    "Type": "PBM AP",
+    "Beds": 123
+  },
+  {
+    "Index": 24,
+    "Hospital": "RS Pelabuhan Palembang",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -2.978139838,
+    "Longitude": 104.7766388,
+    "Type": "PBM AP",
+    "Beds": 78
+  },
+  {
+    "Index": 25,
+    "Hospital": "RS Port Medical Center",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.1098532,
+    "Longitude": 106.8891967,
+    "Type": "PBM AP",
+    "Beds": 15
+  },
+  {
+    "Index": 26,
+    "Hospital": "RS PHC Surabaya",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -7.209478589,
+    "Longitude": 112.7360768,
+    "Type": "PBM AP",
+    "Beds": 226
+  },
+  {
+    "Index": 27,
+    "Hospital": "RS Gatoel",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -7.480863617,
+    "Longitude": 112.4349826,
+    "Type": "PBM AP",
+    "Beds": 181
+  },
+  {
+    "Index": 28,
+    "Hospital": "RS Toeloengredjo",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -7.76315442,
+    "Longitude": 112.1977583,
+    "Type": "PBM AP",
+    "Beds": 170
+  },
+  {
+    "Index": 29,
+    "Hospital": "RS Perkebunan Jember Klinik",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -8.167484692,
+    "Longitude": 113.7059477,
+    "Type": "PBM AP",
+    "Beds": 164
+  },
+  {
+    "Index": 30,
+    "Hospital": "RS Medika Utama",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -7.992017736,
+    "Longitude": 112.2194122,
+    "Type": "PBM AP",
+    "Beds": 110
+  },
+  {
+    "Index": 31,
+    "Hospital": "RS Lavalette",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -7.964819263,
+    "Longitude": 112.6383493,
+    "Type": "PBM AP",
+    "Beds": 218
+  },
+  {
+    "Index": 32,
+    "Hospital": "RS Wonolangan",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -7.768332128,
+    "Longitude": 113.2476574,
+    "Type": "PBM AP",
+    "Beds": 101
+  },
+  {
+    "Index": 33,
+    "Hospital": "RS Djatiroto",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -8.118466415,
+    "Longitude": 113.3592945,
+    "Type": "PBM AP",
+    "Beds": 101
+  },
+  {
+    "Index": 34,
+    "Hospital": "RS Elizabeth",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -7.651928184,
+    "Longitude": 113.9932474,
+    "Type": "PBM AP",
+    "Beds": 100
+  },
+  {
+    "Index": 35,
+    "Hospital": "RS Kaliwates",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -8.181060295,
+    "Longitude": 113.6755831,
+    "Type": "PBM AP",
+    "Beds": 112
+  },
+  {
+    "Index": 36,
+    "Hospital": "RS Bhakti Husada",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.262479198,
+    "Longitude": 107.1403187,
+    "Type": "PBM AP",
+    "Beds": 101
+  },
+  {
+    "Index": 37,
+    "Hospital": "RS Pertamina Tanjung Duren",
+    "Category": "Rumah Sakit Ownership",
+    "Latitude": -6.181772392,
+    "Longitude": 106.7917998,
+    "Type": "PBM AP",
+    "Beds": 82
+  },
+  {
+    "Index": 38,
+    "Hospital": "RS Prima Husada Cipta Medan",
+    "Category": "SOE Hospital",
+    "Latitude": 3.764638233,
+    "Longitude": 98.68214049,
+    "Type": "Membership",
+    "Beds": 67
+  },
+  {
+    "Index": 39,
+    "Hospital": "RS Cut Meutia",
+    "Category": "SOE Hospital",
+    "Latitude": 4.496040101,
+    "Longitude": 97.94900315,
+    "Type": "Membership",
+    "Beds": 107
+  },
+  {
+    "Index": 40,
+    "Hospital": "RS dr. G.L Tobing",
+    "Category": "SOE Hospital",
+    "Latitude": 3.524042759,
+    "Longitude": 98.78503841,
+    "Type": "Membership",
+    "Beds": 72
+  },
+  {
+    "Index": 41,
+    "Hospital": "RS Bangkatan",
+    "Category": "SOE Hospital",
+    "Latitude": 3.599241507,
+    "Longitude": 98.48905399,
+    "Type": "Membership",
+    "Beds": 105
+  },
+  {
+    "Index": 42,
+    "Hospital": "RS Tanjung Selamat",
+    "Category": "SOE Hospital",
+    "Latitude": 3.758256222,
+    "Longitude": 98.27274573,
+    "Type": "Membership",
+    "Beds": 103
+  },
+  {
+    "Index": 43,
+    "Hospital": "RS Sri Pamela",
+    "Category": "SOE Hospital",
+    "Latitude": 3.337926373,
+    "Longitude": 99.16543264,
+    "Type": "Membership",
+    "Beds": 162
+  },
+  {
+    "Index": 44,
+    "Hospital": "RS Sei Dadap",
+    "Category": "SOE Hospital",
+    "Latitude": 2.952965045,
+    "Longitude": 99.66820946,
+    "Type": "Membership",
+    "Beds": 53
+  },
+  {
+    "Index": 45,
+    "Hospital": "RS Sri Torgamba",
+    "Category": "SOE Hospital",
+    "Latitude": 1.779389377,
+    "Longitude": 100.2550456,
+    "Type": "Membership",
+    "Beds": 53
+  },
+  {
+    "Index": 46,
+    "Hospital": "RS Pabatu",
+    "Category": "SOE Hospital",
+    "Latitude": 3.281840645,
+    "Longitude": 99.10720467,
+    "Type": "Membership",
+    "Beds": 117
+  },
+  {
+    "Index": 47,
+    "Hospital": "RS Laras",
+    "Category": "SOE Hospital",
+    "Latitude": 3.112180613,
+    "Longitude": 99.17209542,
+    "Type": "Membership",
+    "Beds": 100
+  },
+  {
+    "Index": 48,
+    "Hospital": "RS Balimbingan",
+    "Category": "SOE Hospital",
+    "Latitude": 2.894380262,
+    "Longitude": 99.16623485,
+    "Type": "Membership",
+    "Beds": 102
+  },
+  {
+    "Index": 49,
+    "Hospital": "RS Tandun",
+    "Category": "SOE Hospital",
+    "Latitude": 0.600211395,
+    "Longitude": 100.6994296,
+    "Type": "Membership",
+    "Beds": 50
+  },
+  {
+    "Index": 50,
+    "Hospital": "RS PTPN VIII Subang",
+    "Category": "SOE Hospital",
+    "Latitude": -6.567945725,
+    "Longitude": 107.7626985,
+    "Type": "Membership",
+    "Beds": 103
+  },
+  {
+    "Index": 51,
+    "Hospital": "RS Parindu",
+    "Category": "SOE Hospital",
+    "Latitude": 0.260523532,
+    "Longitude": 110.3175331,
+    "Type": "Membership",
+    "Beds": 105
+  },
+  {
+    "Index": 52,
+    "Hospital": "RS Danau Salak",
+    "Category": "SOE Hospital",
+    "Latitude": -3.322885005,
+    "Longitude": 114.9523531,
+    "Type": "Membership",
+    "Beds": 52
+  },
+  {
+    "Index": 53,
+    "Hospital": "RS Pindad Medika Utama",
+    "Category": "SOE Hospital",
+    "Latitude": -6.939824336,
+    "Longitude": 107.6465235,
+    "Type": "Membership",
+    "Beds": 85
+  },
+  {
+    "Index": 54,
+    "Hospital": "RS Pindad Turen",
+    "Category": "SOE Hospital",
+    "Latitude": -8.172970813,
+    "Longitude": 112.68663,
+    "Type": "Membership",
+    "Beds": 69
+  },
+  {
+    "Index": 55,
+    "Hospital": "RS Bukit Asam Medika",
+    "Category": "SOE Hospital",
+    "Latitude": -3.763335982,
+    "Longitude": 103.7841758,
+    "Type": "Membership",
+    "Beds": 101
+  },
+  {
+    "Index": 56,
+    "Hospital": "RS LNG Badak",
+    "Category": "SOE Hospital",
+    "Latitude": 0.117982225,
+    "Longitude": 117.470764,
+    "Type": "Membership",
+    "Beds": 50
+  },
+  {
+    "Index": 57,
+    "Hospital": "RS Semen Gresik",
+    "Category": "SOE Hospital",
+    "Latitude": -7.166125732,
+    "Longitude": 112.6418248,
+    "Type": "Membership",
+    "Beds": 200
+  },
+  {
+    "Index": 58,
+    "Hospital": "RS Semen Padang",
+    "Category": "SOE Hospital",
+    "Latitude": -0.941696316,
+    "Longitude": 100.3995189,
+    "Type": "Membership",
+    "Beds": 144
+  },
+  {
+    "Index": 59,
+    "Hospital": "RS Antam Medika",
+    "Category": "SOE Hospital",
+    "Latitude": -6.192574168,
+    "Longitude": 106.9026387,
+    "Type": "Membership",
+    "Beds": 113
+  },
+  {
+    "Index": 60,
+    "Hospital": "RSI Garam",
+    "Category": "SOE Hospital",
+    "Latitude": -7.046937013,
+    "Longitude": 113.9299679,
+    "Type": "Membership",
+    "Beds": 102
+  },
+  {
+    "Index": 61,
+    "Hospital": "RS Petrokimia Gresik",
+    "Category": "SOE Hospital",
+    "Latitude": -7.158513416,
+    "Longitude": 112.642893,
+    "Type": "Membership",
+    "Beds": 113
+  },
+  {
+    "Index": 62,
+    "Hospital": "RS Graha Husada",
+    "Category": "SOE Hospital",
+    "Latitude": -7.149792442,
+    "Longitude": 112.6461522,
+    "Type": "Membership",
+    "Beds": 50
+  },
+  {
+    "Index": 63,
+    "Hospital": "RS Petrokimia Driyorejo Gresik",
+    "Category": "SOE Hospital",
+    "Latitude": -7.37741796,
+    "Longitude": 112.5745417,
+    "Type": "Membership",
+    "Beds": 58
+  },
+  {
+    "Index": 64,
+    "Hospital": "RS PKT Bontang",
+    "Category": "SOE Hospital",
+    "Latitude": 0.181201575,
+    "Longitude": 117.4699595,
+    "Type": "Membership",
+    "Beds": 164
+  },
+  {
+    "Index": 65,
+    "Hospital": "RS Prima Sangatta",
+    "Category": "SOE Hospital",
+    "Latitude": 0.49942817,
+    "Longitude": 117.5589793,
+    "Type": "Membership",
+    "Beds": 68
+  },
+  {
+    "Index": 66,
+    "Hospital": "RS Medika Utama Permata",
+    "Category": "SOE Hospital",
+    "Latitude": -1.270607233,
+    "Longitude": 116.8316399,
+    "Type": "Membership",
+    "Beds": 38
+  },
+  {
+    "Index": 67,
+    "Hospital": "RS Medika Utama Manggar",
+    "Category": "SOE Hospital",
+    "Latitude": -1.218933861,
+    "Longitude": 116.9690047,
+    "Type": "Membership",
+    "Beds": 51
+  },
+  {
+    "Index": 68,
+    "Hospital": "RS Pusri Palembang",
+    "Category": "SOE Hospital",
+    "Latitude": -2.970149024,
+    "Longitude": 104.8014036,
+    "Type": "Membership",
+    "Beds": 102
+  },
+  {
+    "Index": 69,
+    "Hospital": "RS Haji Jakarta",
+    "Category": "Private Hospital",
+    "Latitude": -6.289746823,
+    "Longitude": 106.8898702,
+    "Type": "Membership",
+    "Beds": 233
+  },
+  {
+    "Index": 70,
+    "Hospital": "RS Prima Inti Medika",
+    "Category": "Private Hospital",
+    "Latitude": 5.221643471,
+    "Longitude": 97.02596904,
+    "Type": "Membership",
+    "Beds": 65
+  },
+  {
+    "Index": 71,
+    "Hospital": "RS Syafira",
+    "Category": "Private Hospital",
+    "Latitude": 0.498632382,
+    "Longitude": 101.4547745,
+    "Type": "Membership",
+    "Beds": 140
+  },
+  {
+    "Index": 72,
+    "Hospital": "RS Universitas Indonesia",
+    "Category": "Private Hospital",
+    "Latitude": -6.370178792,
+    "Longitude": 106.8301533,
+    "Type": "KSO",
+    "Beds": 156
+  },
+  {
+    "Index": 73,
+    "Hospital": "RS Bintang Amin",
+    "Category": "Private Hospital",
+    "Latitude": -5.378699363,
+    "Longitude": 105.2204905,
+    "Type": "KSO",
+    "Beds": 151
+  },
+  {
+    "Index": 74,
+    "Hospital": "RS Baiturrahim",
+    "Category": "Private Hospital",
+    "Latitude": -1.604929236,
+    "Longitude": 103.6062894,
+    "Type": "KSO",
+    "Beds": 100
+  },
+  {
+    "Index": 75,
+    "Hospital": "RS Umi Rosnati",
+    "Category": "Private Hospital",
+    "Latitude": 5.550117967,
+    "Longitude": 95.32668879,
+    "Type": "KSO",
+    "Beds": 145
+  },
+  {
+    "Index": 76,
+    "Hospital": "RSU Pekerja",
+    "Category": "Private Hospital",
+    "Latitude": -6.144838583,
+    "Longitude": 106.9234199,
+    "Type": "KSO",
+    "Beds": 157
+  },
+  {
+    "Index": 77,
+    "Hospital": "RS Ukrida",
+    "Category": "Private Hospital",
+    "Latitude": -6.184834533,
+    "Longitude": 106.7805118,
+    "Type": "KSO",
+    "Beds": 105
+  },
+  {
+    "Index": 78,
+    "Hospital": "RAJAL RNM",
+    "Category": "SOE Main Clinic",
+    "Latitude": -8.174296605,
+    "Longitude": 113.6875206,
+    "Type": "PBM AP",
+    "Beds": 8
+  },
+  {
+    "Index": 79,
+    "Hospital": "RAJAL NMU",
+    "Category": "SOE Main Clinic",
+    "Latitude": -7.280629146,
+    "Longitude": 112.7786933,
+    "Type": "PBM AP",
+    "Beds": 87
+  },
+  {
+    "Index": 80,
+    "Hospital": "Santa Clara Valley Medical Center",
+    "Category": "Silicon Valley",
+    "Latitude": 37.3139499,
+    "Longitude": -121.9340007,
+    "Type": "PBM AP",
+    "Beds": 87000
+  }
+]

@@ -1,0 +1,80 @@
+Index,Hospital,Category,Latitude,Longitude,Type,Beds
+1,Bali International Hospital,Rumah Sakit Ownership,-8.676162313,115.2661426,PBM AP,300
+2,RS Pusat Pertamina,Rumah Sakit Ownership,-6.239838906,106.7933298,PBM,302
+3,RS Pertamina Jaya,Rumah Sakit Ownership,-6.173048361,106.8761722,PBM,155
+4,RS Pertamina Balikpapan,Rumah Sakit Ownership,-1.279116324,116.8173345,PBM,180
+5,RS Pertamina Cirebon,Rumah Sakit Ownership,-6.68376661,108.5521196,PBM,100
+6,RS Pertamina Pangkalan Brandan,Rumah Sakit Ownership,4.022031762,98.28354949,PBM,123
+7,RS Pertamina Plaju,Rumah Sakit Ownership,-2.994300127,104.8247073,PBM,79
+8,RS Pertamina Prabumulih,Rumah Sakit Ownership,-3.435072653,104.2261517,PBM,72
+9,RS Pertamina Tarakan,Rumah Sakit Ownership,3.322598337,117.5748275,PBM,55
+10,RS Pertamina Tanjung,Rumah Sakit Ownership,-1.541806747,115.3993381,PBM,51
+11,RS Pertamina Sorong,Rumah Sakit Ownership,-0.877979858,131.2601884,PBM,23
+12,RS Pertamina Cilacap,Rumah Sakit Ownership,-7.701306528,109.0458212,PBM,85
+13,RS Pertamina Balongan,Rumah Sakit Ownership,-6.346360021,108.3395112,PBM,50
+14,RS Pertamina Dumai,Rumah Sakit Ownership,1.65159217,101.4260364,PBM,50
+15,RS Pertamina Rantau,Rumah Sakit Ownership,4.353081945,98.12071161,PBM,50
+16,RS Pelni,Rumah Sakit Ownership,-6.192387412,106.8035262,PBM AP,524
+17,RS Krakatau Medika,Rumah Sakit Ownership,-5.967320515,106.0205146,PBM AP,236
+18,RS Bakti Timah Pangkalpinang,Rumah Sakit Ownership,-2.114309804,106.1091562,PBM AP,175
+19,RS Medika Stania Sungailiat,Rumah Sakit Ownership,-1.85795542,106.1177583,PBM AP,109
+20,RS Bakti Timah Muntok,Rumah Sakit Ownership,-2.07103094,105.1848133,PBM AP,24
+21,RS Bakti Timah Karimun,Rumah Sakit Ownership,1.042218621,103.4023764,PBM AP,119
+22,RS Pelabuhan Jakarta,Rumah Sakit Ownership,-6.124646315,106.9177356,PBM AP,169
+23,RS Pelabuhan Cirebon,Rumah Sakit Ownership,-6.713243898,108.5676738,PBM AP,123
+24,RS Pelabuhan Palembang,Rumah Sakit Ownership,-2.978139838,104.7766388,PBM AP,78
+25,RS Port Medical Center,Rumah Sakit Ownership,-6.1098532,106.8891967,PBM AP,15
+26,RS PHC Surabaya,Rumah Sakit Ownership,-7.209478589,112.7360768,PBM AP,226
+27,RS Gatoel,Rumah Sakit Ownership,-7.480863617,112.4349826,PBM AP,181
+28,RS Toeloengredjo,Rumah Sakit Ownership,-7.76315442,112.1977583,PBM AP,170
+29,RS Perkebunan Jember Klinik,Rumah Sakit Ownership,-8.167484692,113.7059477,PBM AP,164
+30,RS Medika Utama,Rumah Sakit Ownership,-7.992017736,112.2194122,PBM AP,110
+31,RS Lavalette,Rumah Sakit Ownership,-7.964819263,112.6383493,PBM AP,218
+32,RS Wonolangan,Rumah Sakit Ownership,-7.768332128,113.2476574,PBM AP,101
+33,RS Djatiroto,Rumah Sakit Ownership,-8.118466415,113.3592945,PBM AP,101
+34,RS Elizabeth,Rumah Sakit Ownership,-7.651928184,113.9932474,PBM AP,100
+35,RS Kaliwates,Rumah Sakit Ownership,-8.181060295,113.6755831,PBM AP,112
+36,RS Bhakti Husada,Rumah Sakit Ownership,-6.262479198,107.1403187,PBM AP,101
+37,RS Pertamina Tanjung Duren,Rumah Sakit Ownership,-6.181772392,106.7917998,PBM AP,82
+38,RS Prima Husada Cipta Medan,SOE Hospital,3.764638233,98.68214049,Membership,67
+39,RS Cut Meutia,SOE Hospital,4.496040101,97.94900315,Membership,107
+40,RS dr. G.L Tobing,SOE Hospital,3.524042759,98.78503841,Membership,72
+41,RS Bangkatan,SOE Hospital,3.599241507,98.48905399,Membership,105
+42,RS Tanjung Selamat,SOE Hospital,3.758256222,98.27274573,Membership,103
+43,RS Sri Pamela,SOE Hospital,3.337926373,99.16543264,Membership,162
+44,RS Sei Dadap,SOE Hospital,2.952965045,99.66820946,Membership,53
+45,RS Sri Torgamba,SOE Hospital,1.779389377,100.2550456,Membership,53
+46,RS Pabatu,SOE Hospital,3.281840645,99.10720467,Membership,117
+47,RS Laras ,SOE Hospital,3.112180613,99.17209542,Membership,100
+48,RS Balimbingan,SOE Hospital,2.894380262,99.16623485,Membership,102
+49,RS Tandun,SOE Hospital,0.600211395,100.6994296,Membership,50
+50,RS PTPN VIII Subang,SOE Hospital,-6.567945725,107.7626985,Membership,103
+51,RS Parindu,SOE Hospital,0.260523532,110.3175331,Membership,105
+52,RS Danau Salak,SOE Hospital,-3.322885005,114.9523531,Membership,52
+53,RS Pindad Medika Utama,SOE Hospital,-6.939824336,107.6465235,Membership,85
+54,RS Pindad Turen,SOE Hospital,-8.172970813,112.68663,Membership,69
+55,RS Bukit Asam Medika,SOE Hospital,-3.763335982,103.7841758,Membership,101
+56,RS LNG Badak,SOE Hospital,0.117982225,117.470764,Membership,50
+57,RS Semen Gresik ,SOE Hospital,-7.166125732,112.6418248,Membership,200
+58,RS Semen Padang,SOE Hospital,-0.941696316,100.3995189,Membership,144
+59,RS Antam Medika,SOE Hospital,-6.192574168,106.9026387,Membership,113
+60,RSI Garam ,SOE Hospital,-7.046937013,113.9299679,Membership,102
+61,RS Petrokimia Gresik,SOE Hospital,-7.158513416,112.642893,Membership,113
+62,RS Graha Husada,SOE Hospital,-7.149792442,112.6461522,Membership,50
+63,RS Petrokimia Driyorejo Gresik,SOE Hospital,-7.37741796,112.5745417,Membership,58
+64,RS PKT Bontang,SOE Hospital,0.181201575,117.4699595,Membership,164
+65,RS Prima Sangatta,SOE Hospital,0.49942817,117.5589793,Membership,68
+66,RS Medika Utama Permata,SOE Hospital,-1.270607233,116.8316399,Membership,38
+67,RS Medika Utama Manggar,SOE Hospital,-1.218933861,116.9690047,Membership,51
+68,RS Pusri Palembang,SOE Hospital,-2.970149024,104.8014036,Membership,102
+69,RS Haji Jakarta,Private Hospital,-6.289746823,106.8898702,Membership,233
+70,RS Prima Inti Medika,Private Hospital,5.221643471,97.02596904,Membership,65
+71,RS Syafira,Private Hospital,0.498632382,101.4547745,Membership,140
+72,RS Universitas Indonesia,Private Hospital,-6.370178792,106.8301533,KSO,156
+73,RS Bintang Amin,Private Hospital,-5.378699363,105.2204905,KSO,151
+74,RS Baiturrahim,Private Hospital,-1.604929236,103.6062894,KSO,100
+75,RS Umi Rosnati,Private Hospital,5.550117967,95.32668879,KSO,145
+76,RSU Pekerja ,Private Hospital,-6.144838583,106.9234199,KSO,157
+77,RS Ukrida,Private Hospital,-6.184834533,106.7805118,KSO,105
+78,RAJAL RNM,SOE Main Clinic,-8.174296605,113.6875206,PBM AP,8
+79,RAJAL NMU,SOE Main Clinic,-7.280629146,112.7786933,PBM AP,87
