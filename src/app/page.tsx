@@ -14,7 +14,7 @@ export default function Home() {
     setHospitals(hospitalsJson);
     }, []);
   return (
-    <main className="h-screen w-screen p-10 flex flex-row justify-end items-end gap-10 bg-gray-300">
+    <main className="h-screen w-screen p-6 flex flex-row justify-end items-end gap-6 bg-gray-300">
       <Filters hospitals={hospitalsJson} setHospitals={setHospitals} viewState={viewState} setViewState={setViewState}/>
       <HospitalMap hospitals={hospitals} viewState={viewState} setViewState={setViewState}/>
     </main>

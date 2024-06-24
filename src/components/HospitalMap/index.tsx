@@ -44,7 +44,7 @@ const HospitalMap: React.FC<HospitalMapPropsType> = ({ hospitals, viewState, set
     
     
     return (
-        <div className="w-4/5 h-full rounded-lg overflow-clip">
+        <div className="w-4/5 h-full rounded-lg overflow-clip shadow-lg">
             <Map
                 {...viewState}
                 mapboxAccessToken={TOKEN}

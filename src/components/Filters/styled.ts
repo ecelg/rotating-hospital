@@ -2,47 +2,47 @@ import { Checkbox, Input } from "antd"
 import styled from "styled-components"
 export const StyledCheckboxGroup = styled<typeof Checkbox.Group>(Checkbox.Group)`
     .ant-checkbox-wrapper {
-       font-size: 25px;
+       font-size: 18px;
        @media screen and (max-width: 1500px) {
         font-size: 15px;
        }
     }
     .ant-checkbox-inner {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         &::after {
-            transform:rotate(45deg) scale(1) translate(-30%, -80%)
+            transform:rotate(45deg) scale(1) translate(-50%, -70%)
         }
         @media screen and (max-width: 1500px) {
             width: 15px;
             height: 15px;
             &::after {
-                transform:rotate(45deg) scale(.8) translate(-60%, -60%)
+                transform:rotate(45deg) scale(.8) translate(-70%, -70%)
             }
         }
     }
 `
 export const StyledCheckbox = styled<typeof Checkbox>(Checkbox)`
     .ant-checkbox-inner {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         &::after {
-            transform:rotate(45deg) scale(1) translate(-30%, -80%)
+            transform:rotate(45deg) scale(1) translate(-50%, -70%)
         }
         @media screen and (max-width: 1500px) {
             width: 15px;
             height: 15px;
             &::after {
-                transform:rotate(45deg) scale(.8) translate(-60%, -60%)
+                transform:rotate(45deg) scale(.8) translate(-70%, -70%)
             }
         }
     }
     .ant-checkbox-indeterminate {
         .ant-checkbox-inner {
-            width: 25px;
-            height: 25px;
+            width: 20px;
+            height: 20px;
             &::after {
-                transform:rotate(45deg) scale(1) translate(-80%, -20%)
+                transform:rotate(45deg) scale(1) translate(-80%, 0%)
             }
             @media screen and (max-width: 1500px) {
                 width: 15px;
@@ -59,7 +59,7 @@ export const StyledSearchBar = styled<typeof Input.Search>(Input.Search)`
         height: 50px;
         font-size: 20px;
         &::placeholder {
-            font-size: 20px;
+            font-size: 18px;
         }
         @media screen and (max-width: 1500px){
             height: 40px;

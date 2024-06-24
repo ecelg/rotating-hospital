@@ -52,11 +52,11 @@ const Filters: React.FC<FiltersPropsType> = ({hospitals, setHospitals, viewState
         }
     }
     return (
-        <div className='w-1/5 h-full px-4 lg:px-6 2xl:px-10 py-10 flex flex-col gap-5 rounded-lg bg-white'>
+        <div className='w-1/5 h-full px-4 lg:px-6 2xl:px-10 py-10 flex flex-col gap-5 rounded-lg bg-white shadow-lg'>
             <StyledSearchBar placeholder='Enter a hospital name' onSearch={(value) => changeViewState(value)}/>
-            <Divider>Counties and Regions</Divider>
+            <Divider>Countries and Regions</Divider>
             <StyledCheckbox indeterminate={indeterminateCountries} onChange={onCheckAllCountriesChange} checked={checkAllCountries}>
-                <span className='lg:text-lg 2xl:text-xl font-bold'>Check all</span>
+                <span className='lg:text-md 2xl:text-lg font-bold'>Check all</span>
             </StyledCheckbox>
             <div className='max-h-1/5 overflow-scroll no-scrollbar'>
                 <div>
@@ -70,7 +70,7 @@ const Filters: React.FC<FiltersPropsType> = ({hospitals, setHospitals, viewState
             </div>
             <Divider>Healthcare Groups</Divider>
             <StyledCheckbox indeterminate={indeterminateHCGs} onChange={onCheckAllHCGsChange} checked={checkAllHCGs}>
-                <span className='lg:text-lg 2xl:text-xl font-bold'>Check all</span>
+                <span className='lg:text-md 2xl:text-lg font-bold'>Check all</span>
             </StyledCheckbox>
             <div className='h-2/5 overflow-scroll no-scrollbar'>
                 <div>
