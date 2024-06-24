@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,7 +15,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function({ addUtilities }) {
+    function({ addUtilities }: any) {
       addUtilities({
         '.no-scrollbar::-webkit-scrollbar': {
           display: 'none',
