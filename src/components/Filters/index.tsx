@@ -1,7 +1,6 @@
 'use client'
 import React, {useEffect, useState} from 'react';
-import { StyledCheckboxGroup, StyledSearchBar, StyledCheckbox } from './styled';
-import { Divider } from 'antd';
+import { StyledCheckboxGroup, StyledSearchBar, StyledCheckbox, StyledDivider } from './styled';
 import type { CheckboxProps } from 'antd';
 import _ from 'lodash';
 
@@ -52,9 +51,9 @@ const Filters: React.FC<FiltersPropsType> = ({hospitals, setHospitals, viewState
         }
     }
     return (
-        <div className='w-1/5 h-full px-4 lg:px-6 2xl:px-10 py-10 flex flex-col gap-5 rounded-lg bg-white shadow-lg'>
+        <div className='w-1/5 h-full px-4 lg:px-6 2xl:px-10 py-10 flex flex-col gap-3 rounded-lg bg-white shadow-lg'>
             <StyledSearchBar placeholder='Enter a hospital name' onSearch={(value) => changeViewState(value)}/>
-            <Divider>Countries and Regions</Divider>
+            <StyledDivider>Countries and Regions</StyledDivider>
             <StyledCheckbox indeterminate={indeterminateCountries} onChange={onCheckAllCountriesChange} checked={checkAllCountries}>
                 <span className='lg:text-md 2xl:text-lg font-bold'>Check all</span>
             </StyledCheckbox>
@@ -68,7 +67,7 @@ const Filters: React.FC<FiltersPropsType> = ({hospitals, setHospitals, viewState
                         className='flex flex-col' />
                 </div>
             </div>
-            <Divider>Healthcare Groups</Divider>
+            <StyledDivider>Healthcare Groups</StyledDivider>
             <StyledCheckbox indeterminate={indeterminateHCGs} onChange={onCheckAllHCGsChange} checked={checkAllHCGs}>
                 <span className='lg:text-md 2xl:text-lg font-bold'>Check all</span>
             </StyledCheckbox>
