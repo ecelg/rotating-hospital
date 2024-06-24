@@ -33,7 +33,7 @@ export const StyledCheckbox = styled<typeof Checkbox>(Checkbox)`
 export const StyledSearchBar = styled<typeof Input.Search>(Input.Search)`
     .ant-input {
         height: 40px;
-        font-size: 20px;
+        font-size: 15px;
         &::placeholder {
             font-size: 15px;
             transform: translateY(-15%);
@@ -51,5 +51,5 @@ export const StyledSearchBar = styled<typeof Input.Search>(Input.Search)`
 `
 
 export const StyledDivider = styled<typeof Divider>(Divider)`
-    margin: 0 !important;
+    margin: 5px !important;
 `

@@ -27,15 +27,14 @@ const Filters: React.FC<FiltersPropsType> = ({hospitals, setHospitals, viewState
     const onCheckAllHCGsChange: CheckboxProps['onChange'] = (e) => {
         setSelectedHealthcareGroups(e.target.checked ? healthcareGroupsOptions : []);
   };
-    const onChangingSelectedCountries = (selections: string[]) => {
-        setSelectedCountries(selections);
-        setHospitals(hospitals.filter(h => selections.includes(h.Country) ))
-    }
     const onChangingSelectedHCGs = (selections: string[]) => {
         setSelectedHealthcareGroups(selections);
-        setHospitals(hospitals.filter(h => selections.includes(h.HealtcareGroupName) ))
 
     }
+    useEffect(() => {
+        setHospitals(hospitals.filter(h => (selectedCountries.includes(h.Country) && selectedHealthcareGroups.includes(h.HealtcareGroupName)) ))
+    }, [selectedCountries, selectedHealthcareGroups])
+
     useEffect(() => {
         const distinctCountries = _.uniq(_.map(hospitals, 'Country'))
         setCountriesOptions(distinctCountries.sort())
@@ -63,7 +62,7 @@ const Filters: React.FC<FiltersPropsType> = ({hospitals, setHospitals, viewState
                         options={countriesOptions}
                         defaultValue={selectedCountries}
                         value={selectedCountries}
-                        onChange={e => onChangingSelectedCountries(e as string[])}
+                        onChange={e => setSelectedCountries(e as string[])}
                         className='flex flex-col' />
                 </div>
             </div>
@@ -77,7 +76,7 @@ const Filters: React.FC<FiltersPropsType> = ({hospitals, setHospitals, viewState
                         options={healthcareGroupsOptions}
                         defaultValue={selectedHealthcareGroups}
                         value={selectedHealthcareGroups}
-                        onChange={e => onChangingSelectedHCGs(e as string[])}
+                        onChange={e => setSelectedHealthcareGroups(e as string[])}
                         className='flex flex-col' />
                 </div>
             </div>

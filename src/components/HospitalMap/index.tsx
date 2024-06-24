@@ -30,13 +30,13 @@ const HospitalMap: React.FC<HospitalMapPropsType> = ({ hospitals, viewState, set
 
     const getPopOverContent = (hospital: IHospital) => {
         return (
-            <div className="text-lg">
+            <div className="text-md">
                 <div><strong>HealthCare Group Name: </strong>{hospital.HealtcareGroupName}</div>
                 <div><strong>No. of Sites: </strong>{ hospital.NumOfSites}</div>
                 <div><strong>Number of Beds: </strong>{hospital.Beds}</div>
                 <div><strong>Trak Product: </strong>{hospital.TrakProduct}</div>
                 <div className="text-blue-600 cursor-pointer hover:underline" onClick={() => redirectToGoogleEarth(hospital.Latitude, hospital.Longitude)}>
-                    View Google Earth 3D&nbsp;&nbsp;<GlobalOutlined className="text-xl" />
+                    View Google Earth 3D&nbsp;&nbsp;<GlobalOutlined className="text-lg" />
                 </div>
             </div>
         )
@@ -72,7 +72,7 @@ const HospitalMap: React.FC<HospitalMapPropsType> = ({ hospitals, viewState, set
                             latitude={hospital.Latitude}
                             longitude={hospital.Longitude}
                             >
-                            <Popover title={<strong className="text-xl">{hospital.SiteName}</strong>} content={ getPopOverContent(hospital)}>
+                            <Popover title={<strong className="text-lg">{hospital.SiteName}</strong>} content={ getPopOverContent(hospital)}>
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-10 fill-red-500">
                                         <path fillRule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clipRule="evenodd" />
