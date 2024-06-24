@@ -162,8 +162,8 @@ const Filters: React.FC<FiltersPropsType> = ({ hospitals, setHospitals, setViewS
                 <label>Lower Bound: </label>
                 <InputNumber
                     min={minBed}
-                      max={maxBed}
-                      step={10}
+                      max={bedRange.hi}
+                      step={50}
                     defaultValue={minBed}
                     onChange={(value) => setBedRange({lo: value as number, hi: bedRange.hi})}
                     changeOnWheel
@@ -172,9 +172,9 @@ const Filters: React.FC<FiltersPropsType> = ({ hospitals, setHospitals, setViewS
             <div className='flex gap-2 justify-start items-center'>
                 <label>Upper Bound: </label>
                   <InputNumber
-                      min={minBed}
+                      min={bedRange.lo}
                       max={maxBed}
-                      step={10}
+                      step={50}
                       defaultValue={maxBed}
                       onChange={(value) => setBedRange({lo: bedRange.lo, hi: value as number})}
                       changeOnWheel />
