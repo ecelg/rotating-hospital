@@ -15,7 +15,7 @@ export default function Home() {
     }, []);
   return (
     <main className="h-screen w-screen p-6 flex flex-row justify-end items-end gap-6 bg-gray-300">
-      <Filters hospitals={hospitalsJson} setHospitals={setHospitals} viewState={viewState} setViewState={setViewState}/>
+      <Filters hospitals={hospitals} setHospitals={setHospitals} viewState={viewState} setViewState={setViewState}/>
       <HospitalMap hospitals={hospitals} viewState={viewState} setViewState={setViewState}/>
     </main>
   );

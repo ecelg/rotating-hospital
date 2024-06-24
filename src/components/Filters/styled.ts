@@ -1,31 +1,35 @@
-import { Checkbox, Input, Divider } from "antd"
+import { Checkbox, Input, Divider, Slider } from "antd"
 import styled from "styled-components"
 export const StyledCheckboxGroup = styled<typeof Checkbox.Group>(Checkbox.Group)`
-    .ant-checkbox-wrapper {
-       font-size: 15px;
-    }
-    .ant-checkbox-inner {
-        width: 15px;
-        height: 15px;
-        &::after {
-            transform:rotate(45deg) scale(.8) translate(-70%, -70%)
+    @media screen and (min-width: 1500px){
+        .ant-checkbox-wrapper {
+            font-size: 15px;
         }
-    }
-`
-export const StyledCheckbox = styled<typeof Checkbox>(Checkbox)`
-    .ant-checkbox-inner {
-        width: 15px;
-        height: 15px;
-        &::after {
-            transform:rotate(45deg) scale(.8) translate(-70%, -70%)
-        }
-    }
-    .ant-checkbox-indeterminate {
         .ant-checkbox-inner {
             width: 15px;
             height: 15px;
             &::after {
-                transform:rotate(45deg) scale(.8) translate(-80%, 0%)
+                transform:rotate(45deg) scale(.8) translate(-70%, -70%)
+            }
+        }
+    }
+`
+export const StyledCheckbox = styled<typeof Checkbox>(Checkbox)`
+   @media screen and (min-width: 1500px) {
+        .ant-checkbox-inner {
+            width: 15px;
+            height: 15px;
+            &::after {
+                transform:rotate(45deg) scale(.8) translate(-70%, -70%)
+            }
+        }
+        .ant-checkbox-indeterminate {
+            .ant-checkbox-inner {
+                width: 15px;
+                height: 15px;
+                &::after {
+                    transform: scale(.8) translate(-60%, -60%)
+                }
             }
         }
     }
@@ -53,3 +57,5 @@ export const StyledSearchBar = styled<typeof Input.Search>(Input.Search)`
 export const StyledDivider = styled<typeof Divider>(Divider)`
     margin: 5px !important;
 `
+
+export const StyledSlider = styled<typeof Slider>(Slider)``

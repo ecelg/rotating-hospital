@@ -24,6 +24,14 @@ const config: Config = {
           '-ms-overflow-style': 'none',  // IE and Edge
           'scrollbar-width': 'none',     // Firefox
         },
+        'show-scrollbar': {
+          'scrollbar-width': 'auto', /* Firefox */
+          '-ms-overflow-style': 'auto'
+        },
+        'show-scrollbar::-webkit-scrollbar': {
+          'display': 'block',
+          'width': '4px',
+        }
       });
     }
   ],
