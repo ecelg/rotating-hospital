@@ -1,11 +1,13 @@
 interface IHospital {
     Index: number;
-    Hospital: string;
-    Category: string;
+    Country: string;
+    HealtcareGroupName: string;
+    NumOfSites: number;
+    SiteName: string;
+    Beds: number;
+    TrakProduct: string;
     Latitude: number;
     Longitude: number;
-    Type: string;
-    Beds: number;
 }
 
 interface IViewState {

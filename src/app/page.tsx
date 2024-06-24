@@ -1,7 +1,7 @@
 'use client'
 import HospitalMap from "@/components/HospitalMap";
 import Filters from "@/components/Filters";
-import hospitalsJson from '../data/IHC_Hospitals.json'
+import hospitalsJson from '../data/APAC_Hospitals.json'
 import { useState, useEffect } from "react";
 export default function Home() {
   const [hospitals, setHospitals] = useState<IHospital[]>([]);
@@ -11,11 +11,11 @@ export default function Home() {
         zoom: 10
     });
   useEffect(() => {
-        setHospitals(hospitalsJson);
+    setHospitals(hospitalsJson);
     }, []);
   return (
     <main className="h-screen w-screen p-10 flex flex-row justify-end items-end gap-10 bg-gray-300">
-      <Filters hospitals={hospitals} setHospitals={setHospitals} viewState={viewState} setViewState={setViewState}/>
+      <Filters hospitals={hospitalsJson} setHospitals={setHospitals} viewState={viewState} setViewState={setViewState}/>
       <HospitalMap hospitals={hospitals} viewState={viewState} setViewState={setViewState}/>
     </main>
   );

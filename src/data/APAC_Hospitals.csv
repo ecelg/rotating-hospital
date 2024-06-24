@@ -1,0 +1,58 @@
+Index,Country,HealtcareGroupName,NumOfSites,SiteName,Beds,TrakProduct,Latitude,Longitude
+1,Indonesia,Tzuchi hospital,1,Tzuchi hospital,520,TrakCare + TCLE,-6.1061349,106.7397159
+2,Indonesia,Pondok Indah Group,2,RS Pondok Indah,225,TrakCare,-6.28282852,106.7508722
+3,Indonesia,Pondok Indah Group,2,RS Puri Indah ,162,TrakCare,-6.1863032,106.7354327
+4,Indonesia,PT Affinity Group,3,RS Premier Bintaro,170,TrakCare + TCLE,-6.27562859,106.7237978
+5,Indonesia,PT Affinity Group,3,RS Premier Jatinegra,280,TrakCare + TCLE,-6.22211895,106.8612812
+6,Indonesia,PT Affinity Group,3,RS Premier Surabaya ,150,TrakCare + TCLE (To Be Implemented),-7.3044879,112.765249
+7,Indonesia,PT Sarana Meditama International,8,RS EMC Pulomas,168,TrakCare,-7.30423099,112.7639051
+8,Indonesia,PT Sarana Meditama International,8,RS EMC Alam Suter,232,TrakCare,-6.24508698,106.65173
+9,Indonesia,PT Sarana Meditama International,8,RS EMC Cikarang,250,TrakCare,-6.32606279,107.1271395
+10,Indonesia,PT Sarana Meditama International,8,RS EMC Pekayon,184,TrakCare,-6.28761058,107.0280993
+11,Indonesia,PT Sarana Meditama International,8,RS EMC Tangerang,200,TrakCare,-6.21662197,106.6589162
+12,Indonesia,PT Sarana Meditama International,8,RC EMC Sentul,131,TrakCare,-6.56135029,106.8504758
+13,Indonesia,PT Sarana Meditama International,8,RS Grha Kedoya,200,TrakCare,-6.45213566,106.8267772
+14,Indonesia,PT Sarana Meditama International,8,RS EMC Cibitung,120,TrakCare,-6.28946225,107.082975
+15,Indonesia,PT Pelita Reliance,7,BSD ,0,TrakCare,-6.2806577,106.6623893
+16,Indonesia,PT Pelita Reliance,7,Bekasi,0,TrakCare (To Be Implemented),-6.1592399,106.9735308
+17,Indonesia,PT Pelita Reliance,7,Cibubur,0,TrakCare (To Be Implemented),-6.3847589,106.9549913
+18,Indonesia,PT Pelita Reliance,7,Pekanbaru,0,TrakCare (To Be Implemented),0.48227017,101.4186112
+19,Indonesia,PT Pelita Reliance,7,Hospital Permata Hijau,0,TrakCare (To Be Implemented),-6.2181603,106.7779625
+20,Indonesia,PT Pelita Reliance,7,RSIA Grand Family,0,TrakCare (To Be Implemented),-6.123397,106.73882
+21,Indonesia,PT Pelita Reliance,7,RSIA Family,0,TrakCare (To Be Implemented),-6.1335853,106.7902998
+22,Indonesia,Prodia Widyahusada,1,Prodia Clinical Laboratory (Laborotary Dignostics Provider,0,TCLE,-6.18872156,106.8456097
+23,Indonesia,PT Pertamina Bina Medika IHC,1,Bali International Hospital,239,TrakCare (To Be Implemented),-8.6782217,115.258873
+24,Malaysia,Institut Jantung Negara,1,Institut Jantung Negara,438,TrakCare + TCL,3.1700525,101.7089643
+25,Malaysia,Avisena Healthcare Group,2,Avisena Specialist Hospital,120,TrakCare + TCL,3.0717157,101.5224705
+26,Malaysia,Avisena Healthcare Group,2,Avisena Women's & Children's Specialist Hospital,132,TrakCare + TCL,3.0716709,101.5212478
+27,Malaysia,Columbia Asia Group,1,Bukit Tinggi Medical Centre,171,TrakCare,3.01005304,101.4319263
+28,Malaysia,PUSRAWI,1,PUSRAWI,0,TrakCare + TCL,1.4875131,103.3886763
+29,Malaysia,Fatimah Hospital,1,Fatimah Hospital,239,TrakCare,4.61283105,101.1124344
+30,Malaysia,Kuantan Medical Centre,5,KMI KELANA JAYA MEDICAL CENTRE,55,TrakCare,4.60263457,101.1157077
+31,Malaysia,Kuantan Medical Centre,5,KMI KUANTAN MEDICAL CENTRE,32,TrakCare,3.8293373,103.2991571
+32,Malaysia,Kuantan Medical Centre,5,KMI KUALA TERENGGANU MEDICAL CENTRE,0,TrakCare,5.31381786,103.155997
+33,Malaysia,Kuantan Medical Centre,5,KMI TAMAN DESA MEDICAL CENTRE,0,TrakCare,3.0960524,101.677992
+34,Malaysia,Kuantan Medical Centre,5,KMI TAWAU MEDICAL CENTRE,0,TrakCare,4.24711009,117.8837133
+35,Thailand,Huachiew Hospital,1,Huachiew Hospital,338,TrakCare + TCL,13.04478309,100.5869896
+36,Thailand,Vejthani Hospital,1,Vejthani Hospital,263,TrakCare + TCL,13.77183623,100.6369312
+37,Thailand,Sriasawan Hospital Group,2,Sriasawan Hospital Bangkok,60,TrakCare + TCLE,13.787214,100.4462139
+38,Thailand,Sriasawan Hospital Group,2,Sriasawan Hospital NakornSawan,200,,13.7883125,100.4460333
+39,Thailand,Bumrungrad International Hospital,1,Bumrungrad International Hospital,580,TrakCare + TCLE,13.746066,100.5526867
+40,Thailand,BDMS,18,Bangkok Headquarter,373,TrakCare + TCL,13.74860166,100.5829374
+41,Thailand,BDMS,18,Bangkok Huahin,64,TrakCare + TCL,12.7079028,100.0409655
+42,Thailand,BDMS,18,Bangkok Wellness center,0,TrakCare + TCL,13.7470017,100.5479573
+43,Thailand,BDMS,18,Samitivej Sukhumvit,311,TrakCare + TCL,13.7348727,100.5765805
+44,Thailand,BDMS,18,Samitivej Srinakarin,400,TrakCare + TCL,13.7486288,100.6386862
+45,Thailand,BDMS,18,Samitivej China town,59,TrakCare + TCL,13.737828,100.512612
+46,Thailand,BDMS,18,Bangkok Pattaya,400,TrakCare + TCL,12.9538246,100.9055495
+47,Thailand,BDMS,18,Jormtien Hospital,232,TrakCare + TCL,12.9126339,100.896399
+48,Thailand,BDMS,18,Bangkok Chiang Mai,175,TrakCare + TCL,18.78863,99.02576
+49,Thailand,BDMS,18,Bangkok Chiang Rai,80,TrakCare + TCL,19.9928039,99.8638177
+50,Thailand,BDMS,18,NHealth (National healthcare system),0,TCL,13.7450352,100.5849855
+51,Thailand,BDMS,18,Bangkok Heart Hospital,97,TrakCare + TCL,13.7480576,100.583368
+52,Thailand,BDMS,18,Wattanosoth Cancer Hospital,48,TrakCare + TCL,13.74835853,100.5825682
+53,Thailand,BDMS,18,Chiva Transitional Care,52,TrakCare + TCL,13.75102557,100.583305
+54,Thailand,BDMS,18,Bangkok International Hospital,172,TrakCare + TCL,13.75024849,100.5839645
+55,Thailand,BDMS,18,Samitivej Sriracha Hospital,184,TrakCare + TCL,13.34836871,100.8266625
+56,Thailand,BDMS,18,Samitivej Thonburi Hospital,150,TrakCare + TCL,13.71421938,100.4898912
+57,Thailand,BDMS,18,Samitivej Chonburi Hospital,260,Trakcare ,13.37151661,100.9410324
