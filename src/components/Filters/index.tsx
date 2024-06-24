@@ -46,7 +46,7 @@ const Filters: React.FC<FiltersPropsType> = ({hospitals, setHospitals, viewState
         setSelectedHealthcareGroups(distinctHealthcareGroups)
     },[])
     const changeViewState = (value: string) => {
-        const target = hospitals.find((hospital: IHospital) => hospital.Hospital.includes(value))
+        const target = hospitals.find((hospital: IHospital) => hospital.SiteName.toLowerCase().includes(value.toLowerCase()))
         if (target) {
             setViewState({latitude: target.Latitude, longitude: target.Longitude, zoom: 15})
         }
