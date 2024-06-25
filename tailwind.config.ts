@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import "tailwind-scrollbar"
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -24,16 +25,10 @@ const config: Config = {
           '-ms-overflow-style': 'none',  // IE and Edge
           'scrollbar-width': 'none',     // Firefox
         },
-        'show-scrollbar': {
-          'scrollbar-width': 'auto', /* Firefox */
-          '-ms-overflow-style': 'auto'
-        },
-        'show-scrollbar::-webkit-scrollbar': {
-          'display': 'block',
-          'width': '4px',
-        }
       });
-    }
+    },
+    require('tailwind-scrollbar')({ nocompatible: true }),
+
   ],
 };
 export default config;

@@ -56,6 +56,5 @@ export const StyledSearchBar = styled<typeof Input.Search>(Input.Search)`
 
 export const StyledDivider = styled<typeof Divider>(Divider)`
     margin: 5px !important;
+    border-block-start-color: gray !important;
 `
-
-export const StyledSlider = styled<typeof Slider>(Slider)``
