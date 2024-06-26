@@ -1,29 +1,35 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { StyledSearchBar, StyledCheckbox, StyledDivider } from "./styled";
 import type { CheckboxProps } from "antd";
 import { InputNumber, Popover } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import _ from "lodash";
-import hospitalJson from "../../data/APAC_Hospitals.json";
-
+import CsvUpload from "../CsvUpload";
 type FiltersPropsType = {
   hospitals: IHospital[];
+  staticHospitalList: IHospital[];
   setHospitals: (hospitals: IHospital[]) => void;
   viewState: IViewState;
   setViewState: (newViewState: IViewState) => void;
+  setShowUploadAlert: (show: boolean) => void;
+  setUploadAlertType: (type: "success" | "error") => void;
 };
 
 const Filters: React.FC<FiltersPropsType> = ({
   hospitals,
+  staticHospitalList,
   setHospitals,
   setViewState,
+  setShowUploadAlert,
+  setUploadAlertType,
 }) => {
-  const hospitalList: IHospital[] = hospitalJson;
-  const beds = _.map(hospitalList, "Beds");
-  const minBed = Math.min(...beds);
-  const maxBed = Math.max(...beds);
-
+  const [minBed, maxBed] = useMemo(() => {
+    const beds = _.map(staticHospitalList, "Beds");
+    const minBed = Math.min(...beds);
+    const maxBed = Math.max(...beds);
+    return [minBed, maxBed];
+  }, [hospitals]);
   const [countriesOptions, setCountriesOptions] = useState<string[]>([]);
   const [healthcareGroupsOptions, setHealthcareGroupsOptions] = useState<
     string[]
@@ -51,11 +57,11 @@ const Filters: React.FC<FiltersPropsType> = ({
     selectedHCGs.length < healthcareGroupsOptions.length;
 
   const onCheckAllCountriesChange: CheckboxProps["onChange"] = (e) => {
-    setHospitals(e.target.checked ? hospitalList : []);
+    setHospitals(e.target.checked ? staticHospitalList : []);
   };
 
   const onCheckAllHCGsChange: CheckboxProps["onChange"] = (e) => {
-    setHospitals(e.target.checked ? hospitalList : []);
+    setHospitals(e.target.checked ? staticHospitalList : []);
   };
 
   const onChangeCountryCheckbox: CheckboxProps["onChange"] = (e) => {
@@ -64,7 +70,7 @@ const Filters: React.FC<FiltersPropsType> = ({
           _.uniq(
             _.concat(
               hospitals,
-              hospitalJson.filter((h) => h.Country == e.target.value)
+              staticHospitalList.filter((h) => h.Country == e.target.value)
             )
           )
         )
@@ -77,7 +83,7 @@ const Filters: React.FC<FiltersPropsType> = ({
           _.uniq(
             _.concat(
               hospitals,
-              hospitalJson.filter(
+              staticHospitalList.filter(
                 (h) => h.HealthcareGroupName == e.target.value
               )
             )
@@ -89,7 +95,9 @@ const Filters: React.FC<FiltersPropsType> = ({
   };
 
   const getCountryPopoverContent = (country: string) => {
-    const hospitalsInCountry = hospitalList.filter((h) => h.Country == country);
+    const hospitalsInCountry = staticHospitalList.filter(
+      (h) => h.Country == country
+    );
     const hospitalGroups = _.uniq(
       _.map(hospitalsInCountry, "HealthcareGroupName")
     );
@@ -103,7 +111,7 @@ const Filters: React.FC<FiltersPropsType> = ({
     );
   };
   const getHCGPopoverContent = (HCG: string) => {
-    const hospitalsInHCG = hospitalList.filter(
+    const hospitalsInHCG = staticHospitalList.filter(
       (h) => h.HealthcareGroupName == HCG
     );
     const bedCount = _.reduce(
@@ -123,16 +131,21 @@ const Filters: React.FC<FiltersPropsType> = ({
       </div>
     );
   };
+
+  useEffect(() => {
+    setBedRange({ lo: minBed, hi: maxBed });
+  }, [minBed, maxBed]);
+
   useEffect(() => {
     const fullySelected = countriesOptions.filter((country) => {
       return (
         hospitals.filter((h) => h.Country === country).length ===
-        hospitalList.filter((h) => h.Country === country).length
+        staticHospitalList.filter((h) => h.Country === country).length
       );
     });
 
     const indeterminated = countriesOptions.filter((country) => {
-      const totalHospitalsInCountry = hospitalList.filter(
+      const totalHospitalsInCountry = staticHospitalList.filter(
         (h) => h.Country === country
       ).length;
       const selectedHospitalsInCountry = hospitals.filter(
@@ -151,12 +164,12 @@ const Filters: React.FC<FiltersPropsType> = ({
     const fullySelected = healthcareGroupsOptions.filter((hcg) => {
       return (
         hospitals.filter((h) => h.HealthcareGroupName === hcg).length ===
-        hospitalList.filter((h) => h.HealthcareGroupName === hcg).length
+        staticHospitalList.filter((h) => h.HealthcareGroupName === hcg).length
       );
     });
 
     const indeterminated = healthcareGroupsOptions.filter((hcg) => {
-      const totalHospitalsInHCG = hospitalList.filter(
+      const totalHospitalsInHCG = staticHospitalList.filter(
         (h) => h.HealthcareGroupName === hcg
       ).length;
       const selectedHospitalsInHCG = hospitals.filter(
@@ -172,22 +185,24 @@ const Filters: React.FC<FiltersPropsType> = ({
   }, [hospitals]);
 
   useEffect(() => {
-    const validHospitals = hospitalList.filter(
+    const validHospitals = staticHospitalList.filter(
       (h) => h.Beds >= bedRange.lo && h.Beds <= bedRange.hi
     );
     setHospitals(validHospitals);
   }, [bedRange]);
 
   useEffect(() => {
-    const distinctCountries = _.uniq(_.map(hospitalList, "Country"));
-    setCountriesOptions(distinctCountries.sort());
-    setSelectedCountries(distinctCountries);
-    const distinctHealthcareGroups = _.uniq(
-      _.map(hospitalList, "HealthcareGroupName")
-    );
-    setHealthcareGroupsOptions(distinctHealthcareGroups.sort());
-    setSelectedHCGs(distinctHealthcareGroups);
-  }, []);
+    if (!_.isEmpty(hospitals)) {
+      const distinctCountries = _.uniq(_.map(staticHospitalList, "Country"));
+      setCountriesOptions(distinctCountries.sort());
+      setSelectedCountries(distinctCountries);
+      const distinctHealthcareGroups = _.uniq(
+        _.map(staticHospitalList, "HealthcareGroupName")
+      );
+      setHealthcareGroupsOptions(distinctHealthcareGroups.sort());
+      setSelectedHCGs(distinctHealthcareGroups);
+    }
+  }, [staticHospitalList]);
 
   const changeViewState = (value: string) => {
     const target = hospitals.find((hospital: IHospital) =>
@@ -203,10 +218,12 @@ const Filters: React.FC<FiltersPropsType> = ({
   };
 
   return (
-    <div className="w-1/5 min-w-80 h-full px-4 lg:px-6 2xl:px-10 py-10 flex flex-col gap-3 
+    <div
+      className="w-1/5 min-w-80 h-full px-4 lg:px-6 2xl:px-10 py-10 flex flex-col gap-3 
       rounded-lg bg-white shadow-lg overflow-y-scroll overflow-x-hidden
       scrollbar-corner-rounded-full scrollbar-thumb-rounded-full scrollbar-track-rounded-full
-      scrollbar-thin scrollbar-thumb-neutral-400 scrollbar-track-neutral-100">
+      scrollbar-thin scrollbar-thumb-neutral-400 scrollbar-track-neutral-100"
+    >
       <StyledSearchBar
         placeholder="Enter a hospital name"
         onSearch={(value) => changeViewState(value)}
@@ -229,7 +246,7 @@ const Filters: React.FC<FiltersPropsType> = ({
               indeterminate={indeterminateCountries.includes(country)}
               onChange={onChangeCountryCheckbox}
             >
-              <div className="">
+              <div>
                 <span className="mr-2">{country}</span>
                 <Popover
                   placement="right"
@@ -248,7 +265,15 @@ const Filters: React.FC<FiltersPropsType> = ({
         onChange={onCheckAllHCGsChange}
         checked={checkAllHCGs}
       >
-        <span className="lg:text-md 2xl:text-lg font-bold">Check all</span>
+        <div className="flex gap-2 items-center">
+          <span className="lg:text-md 2xl:text-lg font-bold">Check all</span>
+          {checkAllHCGs && (
+            <span>
+              (Total {healthcareGroupsOptions.length} Groups, {hospitals.length}{" "}
+              Sites)
+            </span>
+          )}
+        </div>
       </StyledCheckbox>
       <div>
         <div className="flex flex-col">
@@ -271,14 +296,14 @@ const Filters: React.FC<FiltersPropsType> = ({
         </div>
       </div>
       <StyledDivider>Number of Beds</StyledDivider>
-      <div className="mt-6 flex flex-col gap-2">
+      <div className="flex flex-col gap-2">
         <div className="flex gap-2 justify-start items-center">
           <label>Lower Bound: </label>
           <InputNumber
             min={minBed}
             max={bedRange.hi}
             step={50}
-            defaultValue={minBed}
+            value={bedRange.lo}
             onChange={(value) =>
               setBedRange({ lo: value as number, hi: bedRange.hi })
             }
@@ -291,13 +316,20 @@ const Filters: React.FC<FiltersPropsType> = ({
             min={bedRange.lo}
             max={maxBed}
             step={50}
-            defaultValue={maxBed}
+            value={bedRange.hi}
             onChange={(value) =>
               setBedRange({ lo: bedRange.lo, hi: value as number })
             }
             changeOnWheel
           />
         </div>
+      </div>
+      <StyledDivider>Upload New CSV</StyledDivider>
+      <div>
+        <CsvUpload
+          setShowUploadAlert={setShowUploadAlert}
+          setUploadAlertType={setUploadAlertType}
+        />
       </div>
     </div>
   );

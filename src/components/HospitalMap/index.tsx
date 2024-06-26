@@ -53,11 +53,11 @@ const HospitalMap: React.FC<HospitalMapPropsType> = ({
         </div>
         <div>
           <strong>Number of Outpatient Visits: </strong>
-          {hospital.NumOfOutpatientVisits || "TBC"}
+          {hospital.NumOfOutpatientVisits == -1 ? "TBC" : hospital.NumOfOutpatientVisits}
         </div>
         <div>
           <strong>Number of Inpatient Visites: </strong>
-          {hospital.NumOfInpatientVisits || "TBC"}
+          {hospital.NumOfInpatientVisits == -1 ? "TBC": hospital.NumOfInpatientVisits}
         </div>
         <div>
           <strong>Trak Product: </strong>
