@@ -3,7 +3,9 @@ import { useCSVReader } from "react-papaparse";
 import aws from "aws-sdk";
 import { Button, Input, Spin, Steps } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
-
+import { hasAllIHospitalFields, sampleHospital } from "@/util/typeCheck";
+import _ from "lodash";
+import { error } from "console";
 const SECRET = process.env.NEXT_PUBLIC_CSV_UPLOAD_SECRET;
 type CsvUploadPropsType = {
   setShowUploadAlert: (show: boolean) => void;
@@ -28,34 +30,50 @@ const CsvUpload: React.FC<CsvUploadPropsType> = ({
   const convertCsvArrayToJson = (csv: any[][]) => {
     const colNames: string[] = csv[0];
     const rows = csv.slice(1);
-    const jsonData = rows.map((row: any[]) => {
+    let jsonData = rows.map((row: any[]) => {
       const obj: { [key: string]: any } = {};
-      colNames.forEach((col: string, index: number) => {
-        obj[col] = row[index];
+      colNames.forEach((key: string, index: number) => {
+        // account for extra trailing comma
+        if (key != "") {
+          obj[key] = row[index];
+        }
       });
+      if (!colNames.includes("NumOfOutpatientVisits")) {
+        obj["NumOfOutpatientVisits"] = -1;
+      }
+      if (!colNames.includes("NumOfInpatientVisits")) {
+        obj["NumOfInpatientVisits"] = -1;
+      }
+      if (!hasAllIHospitalFields(obj)) {
+        return {};
+      }
       return obj;
+    });
+    jsonData = jsonData.filter((obj) => {
+      return !_.isEmpty(obj);
     });
     return jsonData;
   };
   const handleFileUpload = async (data: { data: any[][] }) => {
     setIsLoading(true);
-    const jsonData = convertCsvArrayToJson(data.data);
-    const fileContent = JSON.stringify(jsonData);
-    const s3 = new aws.S3({
-      credentials: {
-        accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID as string,
-        secretAccessKey: process.env
-          .NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY as string,
-      },
-      region: process.env.NEXT_PUBLIC_AWS_REGION as string,
-    });
-    const params = {
-      Bucket: process.env.NEXT_PUBLIC_AWS_BUCKET_NAME as string,
-      Key: process.env.NEXT_PUBLIC_AWS_JSON_FILE_NAME as string,
-      Body: fileContent,
-      ContentType: "application/json",
-    };
     try {
+      const jsonData = convertCsvArrayToJson(data.data);
+      const fileContent = JSON.stringify(jsonData);
+      const s3 = new aws.S3({
+        credentials: {
+          accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID as string,
+          secretAccessKey: process.env
+            .NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY as string,
+        },
+        region: process.env.NEXT_PUBLIC_AWS_REGION as string,
+      });
+      const params = {
+        Bucket: process.env.NEXT_PUBLIC_AWS_BUCKET_NAME as string,
+        Key: process.env.NEXT_PUBLIC_AWS_JSON_FILE_NAME as string,
+        Body: fileContent,
+        ContentType: "application/json",
+      };
+
       await s3.putObject(params).promise();
       setUploadAlertType("success");
     } catch (error) {
@@ -67,7 +85,7 @@ const CsvUpload: React.FC<CsvUploadPropsType> = ({
       setTimeout(() => {
         setShowUploadAlert(false);
         window.location.reload();
-      }, 2000);
+      }, 200000);
     }
   };
 

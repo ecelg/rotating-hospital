@@ -26,7 +26,7 @@ Index,Country,HealthcareGroupName,NumOfSites,SiteName,Beds,TrakProduct,NumOfOutp
 25,Malaysia,Avisena Healthcare Group,2,Avisena Specialist Hospital:,120,TrakCare + TCL,-1,-1,3.0717157,101.5224705
 26,Malaysia,Avisena Healthcare Group,2,Avisena Women�s & Children�s Specialist Hospital:,132,TrakCare + TCL,-1,-1,3.0716709,101.5212478
 27,Malaysia,Columbia Asia Group,1,Bukit Tinggi Medical Centre,171,TrakCare,-1,-1,3.01005304,101.4319263
-28,Malaysia,PUSRAWI,1,PUSRAWI,0,TrakCare + TCL,-1,-1,1.4875131,103.3886763
+28,Malaysia,PUSRAWI,1,PUSRAWI,0,TrakCare + TCL,-1,-1,3.1710388,101.7100503
 29,Malaysia,Fatimah Hospital,1,Fatimah Hospital,239,TrakCare,-1,-1,4.61283105,101.1124344
 30,Malaysia,Kuantan Medical Centre,5,KMI KELANA JAYA MEDICAL CENTRE,55,TrakCare,-1,-1,4.60263457,101.1157077
 31,Malaysia,Kuantan Medical Centre,5,KMI KUANTAN MEDICAL CENTRE,32,TrakCare,-1,-1,3.8293373,103.2991571
@@ -45,8 +45,8 @@ Index,Country,HealthcareGroupName,NumOfSites,SiteName,Beds,TrakProduct,NumOfOutp
 44,Thailand,BDMS,18,Samitivej Srinakarin,400,TrakCare + TCL,-1,-1,13.7486288,100.6386862
 46,Thailand,BDMS,18,Bangkok Pattaya,400,TrakCare + TCL,-1,-1,12.9538246,100.9055495
 47,Thailand,BDMS,18,Jormtien Hospital,232,TrakCare + TCL,-1,-1,12.9126339,100.896399
-48,Thailand,BDMS,18,Bangkok Chiang Mai,175,TrakCare + TCL,-1,-1,18.78863,99.02576
-49,Thailand,BDMS,18,Bangkok Chiang Rai,80,TrakCare + TCL,-1,-1,19.9928039,99.8638177
+48,Thailand,BDMS,18,Bangkok Chiang Mai,175,TrakCare + TCL,-1,-1,18.7885412,99.0263062
+49,Thailand,BDMS,18,Bangkok Chiang Rai,80,TrakCare + TCL,-1,-1,19.99280126,99.86353343
 50,Thailand,BDMS,18,NHealth (National healthcare system),0,TCL,-1,-1,13.7450352,100.5849855
 51,Thailand,BDMS,18,Bangkok Heart Hospital,97,TrakCare + TCL,-1,-1,13.7480576,100.583368
 52,Thailand,BDMS,18,Wattanosoth Cancer Hospital,48,TrakCare + TCL,-1,-1,13.74835853,100.5825682

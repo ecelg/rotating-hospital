@@ -23,7 +23,7 @@ const HospitalMap: React.FC<HospitalMapPropsType> = ({
   setViewState,
 }) => {
   const redirectToGoogleEarth = (latitude: number, longitude: number) => {
-    const altitude = 50; // Altitude in meters
+    const altitude = 300; // Altitude in meters
     const heading = 90; // Camera direction in degrees (90 is east, adjust as needed for the front view)
     const tilt = 70; // Camera tilt in degrees to get a good front view
     const range = 200; // Distance from the point in meters
@@ -53,11 +53,15 @@ const HospitalMap: React.FC<HospitalMapPropsType> = ({
         </div>
         <div>
           <strong>Number of Outpatient Visits: </strong>
-          {hospital.NumOfOutpatientVisits == -1 ? "TBC" : hospital.NumOfOutpatientVisits}
+          {hospital.NumOfOutpatientVisits == -1
+            ? "TBC"
+            : hospital.NumOfOutpatientVisits}
         </div>
         <div>
           <strong>Number of Inpatient Visites: </strong>
-          {hospital.NumOfInpatientVisits == -1 ? "TBC": hospital.NumOfInpatientVisits}
+          {hospital.NumOfInpatientVisits == -1
+            ? "TBC"
+            : hospital.NumOfInpatientVisits}
         </div>
         <div>
           <strong>Trak Product: </strong>

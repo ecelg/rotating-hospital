@@ -22,7 +22,9 @@
     "react-dom": "^18",
     "react-map-gl": "^7.1.7",
     "react-papaparse": "^4.4.0",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "ts-interface-keys-transformer": "^2.3.2",
+    "ts-transformer-keys": "^0.4.4"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.5",
