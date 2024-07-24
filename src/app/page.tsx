@@ -3,8 +3,7 @@ import HospitalMap from "@/components/HospitalMap";
 import Filters from "@/components/Filters";
 import { useState, useEffect, useMemo } from "react";
 import { Alert } from "antd";
-import aws from "aws-sdk";
-import fallbackHospitals from "../data/APAC_Hospitals.json";
+import apac_hospitals from "../data/APAC_Hospitals.json";
 import { hasAllIHospitalFields } from "@/util/typeCheck";
 export default function Home() {
   const [hospitals, setHospitals] = useState<IHospital[]>([]);
@@ -21,48 +20,58 @@ export default function Home() {
       ? "File uploaded successfully, updating hospitals..."
       : "File upload failed, please double check the csv format!";
   }, [uploadAlertType]);
-  const retrieveHospitalData = async () => {
-    const s3 = new aws.S3({
-      credentials: {
-        accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID as string,
-        secretAccessKey: process.env
-          .NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY as string,
-      },
-      region: process.env.NEXT_PUBLIC_AWS_REGION as string,
+  // const retrieveHospitalData = async () => {
+  //   const s3 = new aws.S3({
+  //     credentials: {
+  //       accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID as string,
+  //       secretAccessKey: process.env
+  //         .NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY as string,
+  //     },
+  //     region: process.env.NEXT_PUBLIC_AWS_REGION as string,
+  //   });
+  //   const params = {
+  //     Bucket: process.env.NEXT_PUBLIC_AWS_BUCKET_NAME as string,
+  //     Key: process.env.NEXT_PUBLIC_AWS_JSON_FILE_NAME as string,
+  //   };
+  //   try {
+  //     const data = await s3.getObject(params).promise();
+  //     const json = JSON.parse(data.Body?.toString("utf-8") || "[]");
+  //     console.log(json);
+  //     const hospitalJson: IHospital[] = json.map((h: IHospital) => {
+  //       if (!hasAllIHospitalFields(h)) {
+  //         throw new Error();
+  //       }
+  //       if (h.Index) h.Index = Number(h.Index);
+  //       if (h.Beds) h.Beds = Number(h.Beds);
+  //       if (h.NumOfSites) h.NumOfSites = Number(h.NumOfSites);
+  //       if (h.NumOfInpatientVisits)
+  //         h.NumOfInpatientVisits = Number(h.NumOfInpatientVisits);
+  //       if (h.NumOfOutpatientVisits)
+  //         h.NumOfOutpatientVisits = Number(h.NumOfOutpatientVisits);
+  //       if (h.Latitude) h.Latitude = Number(h.Latitude);
+  //       if (h.Longitude) h.Longitude = Number(h.Longitude);
+  //       return h;
+  //     });
+  //     console.log(hospitalJson);
+  //     setStaticHospitalList(hospitalJson);
+  //     setHospitals(hospitalJson);
+  //   } catch (error) {
+  //     setStaticHospitalList(fallbackHospitals);
+  //     setHospitals(fallbackHospitals);
+  //   }
+  // };
+  const processHospials = () => {
+    const filteredHospitals: IHospital[] = [];
+    apac_hospitals.forEach((h) => {
+      if (hasAllIHospitalFields(h)) {
+        filteredHospitals.push(h as IHospital);
+      }
     });
-    const params = {
-      Bucket: process.env.NEXT_PUBLIC_AWS_BUCKET_NAME as string,
-      Key: process.env.NEXT_PUBLIC_AWS_JSON_FILE_NAME as string,
-    };
-    try {
-      const data = await s3.getObject(params).promise();
-      const json = JSON.parse(data.Body?.toString("utf-8") || "[]");
-      console.log(json);
-      const hospitalJson: IHospital[] = json.map((h: IHospital) => {
-        if (!hasAllIHospitalFields(h)) {
-          throw new Error();
-        }
-        if (h.Index) h.Index = Number(h.Index);
-        if (h.Beds) h.Beds = Number(h.Beds);
-        if (h.NumOfSites) h.NumOfSites = Number(h.NumOfSites);
-        if (h.NumOfInpatientVisits)
-          h.NumOfInpatientVisits = Number(h.NumOfInpatientVisits);
-        if (h.NumOfOutpatientVisits)
-          h.NumOfOutpatientVisits = Number(h.NumOfOutpatientVisits);
-        if (h.Latitude) h.Latitude = Number(h.Latitude);
-        if (h.Longitude) h.Longitude = Number(h.Longitude);
-        return h;
-      });
-      console.log(hospitalJson);
-      setStaticHospitalList(hospitalJson);
-      setHospitals(hospitalJson);
-    } catch (error) {
-      setStaticHospitalList(fallbackHospitals);
-      setHospitals(fallbackHospitals);
-    }
+    setStaticHospitalList(filteredHospitals);
+    setHospitals(filteredHospitals);
   };
   useEffect(() => {
-    retrieveHospitalData();
+    processHospials();
   }, []);
   return (
     <main className="relative h-screen w-screen p-6 flex flex-row justify-end items-end gap-6 bg-gray-200">

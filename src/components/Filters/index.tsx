@@ -5,7 +5,6 @@ import type { CheckboxProps } from "antd";
 import { InputNumber, Popover } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import _ from "lodash";
-import CsvUpload from "../CsvUpload";
 type FiltersPropsType = {
   hospitals: IHospital[];
   staticHospitalList: IHospital[];
@@ -21,8 +20,6 @@ const Filters: React.FC<FiltersPropsType> = ({
   staticHospitalList,
   setHospitals,
   setViewState,
-  setShowUploadAlert,
-  setUploadAlertType,
 }) => {
   const [minBed, maxBed] = useMemo(() => {
     const beds = _.map(staticHospitalList, "Beds");
@@ -323,13 +320,6 @@ const Filters: React.FC<FiltersPropsType> = ({
             changeOnWheel
           />
         </div>
-      </div>
-      <StyledDivider>Upload New CSV</StyledDivider>
-      <div>
-        <CsvUpload
-          setShowUploadAlert={setShowUploadAlert}
-          setUploadAlertType={setUploadAlertType}
-        />
       </div>
     </div>
   );
