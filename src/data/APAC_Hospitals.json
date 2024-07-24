@@ -1385,7 +1385,7 @@
     "SiteName": "2nd Field Hospital",
     "Beds": 0,
     "TrakProduct": "TCL",
-    "Latitude": "",
+    "Latitude": 1.7534717,
     "Longitude": "",
     "NumOfOutpatientVisits": -1,
     "NumOfInpatientVisits": -1
