@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IHC Hospitals",
+  title: "TrakCare Hospitals Sites APAC",
   description: "APAC Hospitals InterSystems",
 };
 
